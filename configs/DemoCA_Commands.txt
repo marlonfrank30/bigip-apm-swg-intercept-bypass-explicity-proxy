@@ -1,0 +1,40 @@
+Root CA
+
+mkdir /shared/ca
+cd /shared/ca
+mkdir certs crl newcerts private
+touch index.txt
+echo 1000 > serial
+
+openssl genrsa -aes256 -out private/ca.key 2048
+
+openssl req -config openssl_root.cnf -key private/ca.key -new -x509 -days 7300 -sha256 -extensions v3_ca -out certs/ca.cert
+
+
+
+
+
+Intermediate/Sub CA
+
+mkdir /shared/ca/intermediate
+cd /shared/ca/intermediate
+mkdir certs csr crl newcerts private
+touch index.txt
+echo 1000 > serial
+echo 1000 > crlnumber
+
+cd /shared/ca
+
+openssl genrsa -aes256 -out intermediate/private/intermediate.key 2048
+
+upload file openssl_intermediate.cnf to /shared/ca/intermediate directory
+
+openssl req -config intermediate/openssl_intermediate.cnf -new -sha256 -key intermediate/private/intermediate.key -out intermediate/csr/intermediate.csr
+
+openssl ca -config openssl_root.cnf -extensions v3_intermediate_ca -days 3650 -notext -md sha256 -in intermediate/csr/intermediate.csr -out intermediate/certs/intermediate.cert
+
+openssl x509 -in "intermediate/certs/intermediate.cert" -purpose -noout -> When viewed with OpenSSL the certificate should have the following highlighted properties Any Purpose CA : Yes
+openssl x509 -in "intermediate/certs/intermediate.cert" -text ->     Digital Signature, Certificate Sign, CRL Sign X509v3 Basic Constraints: critical CA:TRUE
+
+openssl verify -CAfile certs/ca.cert intermediate/certs/intermediate.cert
+
