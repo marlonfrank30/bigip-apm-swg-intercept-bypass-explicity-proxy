@@ -140,10 +140,6 @@ Use at your own risk and validate in a test environment prior to production depl
 - Requires F5 BIG-IP with **APM** and **SWG (URL Filtering)** enabled.
 - Recommended to test changes in a **non-production** setup before deployment.
 
-## Disclaimer
-
-This repository is provided for reference and educational purposes. Review all configurations before production deployment.
-
 ## 🧑‍💻 Author
 **Marlon Frank**  
 *Network and Application Security & F5 Automation Engineer*  
