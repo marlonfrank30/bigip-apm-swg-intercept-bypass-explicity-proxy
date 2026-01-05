@@ -67,16 +67,16 @@ flowchart TD
 ## BIG-IP Configuration Screenshots (Placeholders)
 
 - **APM-Explicit forward Bypass proxy-with-the-subordinate-CA**
-"![](images/apm-Explicit forward Bypass proxy-with-the-subordinate-CA.png"
+`![](images/apm-Explicit forward Bypass proxy-with-the-subordinate-CA.png`
 
 - **APM-Explicit forward Bypass proxy-with the subordinate-CA-Categort-Lookup_URL Filtering_Assign**
-"![](images/apm-Explicit forward Bypass proxy-with the subordinate-CA-Categort-Lookup_URL Filtering_Assign.png"
+`![](images/apm-Explicit forward Bypass proxy-with the subordinate-CA-Categort-Lookup_URL Filtering_Assign.png`
 
 - **APM-Explicit forward Bypass proxy-with-the-subordinate-CA**
-  "![](images/apm-Explicit forward Bypass proxy-with-the-subordinate-CA.png"
+`![](images/apm-Explicit forward Bypass proxy-with-the-subordinate-CA.png`
 
 - **APM-Explicit forward Intercept proxy-with the subordinate-CA-Categort-Lookup_URL Filtering_Assign**
-  "![](images/apm-Explicit forward Intercept proxy-with the subordinate-CA-Categort-Lookup_URL Filtering_Assign.png"
+`![](images/apm-Explicit forward Intercept proxy-with the subordinate-CA-Categort-Lookup_URL Filtering_Assign.png`
 
 ---
 
