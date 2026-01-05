@@ -133,7 +133,7 @@ Use at your own risk and validate in a test environment prior to production depl
 
 ## 🧾 References & Resources
 
-- [F5 SWG Overview](ihttps://techdocs.f5.com/en-us/bigip-16-1-0/big-ip-access-policy-manager-secure-web-gateway/big-ip-apm-secure-web-gateway-overview.html)  
+- [F5 SWG Overview](https://techdocs.f5.com/en-us/bigip-16-1-0/big-ip-access-policy-manager-secure-web-gateway/big-ip-apm-secure-web-gateway-overview.html)  
 - [F5 SWG APM Implementation Overview](https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-secure-web-gateway-implementations-11-5-0.html)
 ---
 
