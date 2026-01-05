@@ -68,17 +68,17 @@ flowchart TD
 
 > Replace the following images with screenshots from your BIG-IP system.
 
-- **Explicit Proxy Listener**
-  - `images/explicit-proxy-listener.png`
+- **APM-Explicit forward Bypass proxy-with-the-subordinate-CA**
+  - `images/apm-Explicit forward Bypass proxy-with-the-subordinate-CA.png`
 
-- **SSL Forward Proxy Profile**
-  - `images/ssl-forward-proxy-profile.png`
+- **APM-Explicit forward Bypass proxy-with the subordinate-CA-Categort-Lookup_URL Filtering_Assign**
+  - `images/apm-Explicit forward Bypass proxy-with the subordinate-CA-Categort-Lookup_URL Filtering_Assign.png`
 
-- **APM Access Policy**
-  - `images/apm-access-policy.png`
+- **APM-Explicit forward Bypass proxy-with-the-subordinate-CA**
+  - `images/apm-Explicit forward Bypass proxy-with-the-subordinate-CA.png`
 
-- **URL Filtering Policy**
-  - `images/url-filtering-policy.png`
+- **APM-Explicit forward Intercept proxy-with the subordinate-CA-Categort-Lookup_URL Filtering_Assign**
+  - `images/apm-Explicit forward Intercept proxy-with the subordinate-CA-Categort-Lookup_URL Filtering_Assign.png`
 
 ---
 
@@ -117,7 +117,35 @@ curl -x http://<BIGIP_IP>:3128 https://www.youtube.com -v
 
 ---
 
+
+## Version Information
+
+- **BIG-IP Version Tested:** 17.5.1.3
+- **Purpose:** BIG-IP Access Policy Manager (APM) implements a Secure Web Gateway (SWG) for outbound access by providing access control based on URL categorization to forward proxy. With APM, you can create a configuration to protect your network assets and end users from threats, and enforce a use and compliance policy for Internet access. Users that access the Internet from the enterprise go through APM, which can allow or block access to URL categories or indicate that the user should confirm the URL before access can be allowed.
+
+---
+
+## License
+
+This project is intended for operational automation within F5 environments.  
+Use at your own risk and validate in a test environment prior to production deployment.
+
+
+## 🧾 References & Resources
+
+- [F5 SWG Overview](ihttps://techdocs.f5.com/en-us/bigip-16-1-0/big-ip-access-policy-manager-secure-web-gateway/big-ip-apm-secure-web-gateway-overview.html)  
+- [F5 SWG APM Implementation Overview](https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-secure-web-gateway-implementations-11-5-0.html)
+---
+
+## ⚙️ Notes
+
+- Requires F5 BIG-IP with **APM** and **SWG (URL Filtering)** enabled.
+- Recommended to test changes in a **non-production** setup before deployment.
+
 ## Disclaimer
 
 This repository is provided for reference and educational purposes. Review all configurations before production deployment.
-# bigip-apm-swg-intercept-bypass-explicity-proxy
+
+## 🧑‍💻 Author
+**Marlon Frank**  
+*Network and Application Security & F5 Automation Engineer*  
