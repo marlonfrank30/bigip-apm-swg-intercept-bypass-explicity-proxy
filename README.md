@@ -64,7 +64,7 @@ flowchart TD
 
 ---
 
-## BIG-IP Configuration Screenshots (Placeholders)
+## BIG-IP Configuration Screenshots
 
 - **APM Explicit forward Bypass proxy with the subordinate CA**
 ![](images/apm-explicit-forward-bypass-proxy-with-the-subordinate-CA.png)
